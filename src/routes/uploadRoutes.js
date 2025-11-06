@@ -25,7 +25,7 @@ router.post("/", upload.single("file"), (req, res) => {
   }
 
   // Build the public file URL
-  const fileUrl = `http://localhost:5000/uploads/${req.file.filename}`;
+  const fileUrl = `https://cemeteryapi.onrender.com/uploads/${req.file.filename}`;
   res.json({ url: fileUrl });
 });
 
